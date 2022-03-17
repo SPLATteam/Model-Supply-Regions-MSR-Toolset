@@ -1,10 +1,11 @@
-<img src="https://user-images.githubusercontent.com/77098670/158803434-7125693b-283c-4d36-8780-2c57ad2015c9.gif" width="300" height="150">
+<img src="https://user-images.githubusercontent.com/77098670/158803434-7125693b-283c-4d36-8780-2c57ad2015c9.gif" width="400" height="200">
 
-**Lead code author:** Bilal Hussain
-
-**Script and methodology contributors:** Sebastian Sterl, Yunshu Li
-
-**Contact** : [Bhussain@irena.org](mailto:Bhussain@irena.org)
+## Code Authors:
+**MSR_Creator.py, AttributorCombiner.py, Screener.py**: Bilal Hussain\
+**Profile_Generator.py**: Bilal Hussain, Yunshu Li, Sebastian Sterl\
+**Clustering.py**: Yunshu Li\
+**Methodology contributions:** Asami Miketa, Daniel Russo, Pablo Carvajal, Mohamed Elabbas\
+**Contact** : [bhussain@irena.org](mailto:bhussain@irena.org), [ssterl@irena.org](mailto:ssterl@irena.org), [y_li@outlook.com](mailto:y_li@outlook.com)
 
 ## Introduction:
 
