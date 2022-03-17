@@ -1,4 +1,4 @@
-![Tool Logo](https://user-images.githubusercontent.com/77098670/158803434-7125693b-283c-4d36-8780-2c57ad2015c9.gif)
+<img src="https://user-images.githubusercontent.com/77098670/158803434-7125693b-283c-4d36-8780-2c57ad2015c9.gif" width="300" height="200">
 
 **Lead code author:** Bilal Hussain
 
