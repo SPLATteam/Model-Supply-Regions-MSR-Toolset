@@ -33,6 +33,7 @@ Library versions mentioned above serve only for guidance. The scripts should be 
 Version 0.1.0 - March 2022
 
 ## License:
+See [license](https://github.com/bhussain89/TestRepository/blob/main/LICENSE) here
 
 ## Disk space requirements:
 
