@@ -53,4 +53,4 @@ Indicative code run times for a single country are as follows:
 
 **AttributorCombiner, Screener, Cluster:** Less than 5 minutes
 
-Total run time (all scripts) for complete Africa dataset (50 countries) took 36 hours for singly technology. This run time can significantly decrease if stricter exclusion and resource criteria is adopted in ControFile\_MSR\_Creator.xlsx.
+Total run time (all scripts) for complete Africa dataset (50 countries) took 36 hours for singly technology. This run time can significantly decrease if stricter exclusion and resource criteria is adopted in ControFile\_MSRCreator.xlsx.
