@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/77098670/158803434-7125693b-283c-4d36-8780-2c57ad2015c9.gif" width="300" height="200">
+<img src="https://user-images.githubusercontent.com/77098670/158803434-7125693b-283c-4d36-8780-2c57ad2015c9.gif" width="300" height="150">
 
 **Lead code author:** Bilal Hussain
 
@@ -14,9 +14,7 @@ This is the public repository of IRENA&#39;s Model Supply Regions (MSR) tool. Th
 
 MSR toolset comprises of five python scripts that are run sequentially. A high level description of each script and process flow is illustrated below.
 
-![Shape2](RackMultipart20220317-4-16ihn14_html_246b442148f7cd1a.gif)
-
-![Shape3](RackMultipart20220317-4-16ihn14_html_1624b78e2e8d57f9.gif)
+<img src="https://user-images.githubusercontent.com/77098670/158805233-92587a46-3e81-4bc0-9682-0aefac473295.gif" width="650" height="900">
 
 Each script is enclosed in a separate folder along with its respective control file.xlsx. Profile\_Generator.py requires reanalysis data which can be downloaded using ERA5 API script available in respective folder.
 
