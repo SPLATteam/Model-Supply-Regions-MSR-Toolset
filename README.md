@@ -17,7 +17,7 @@ MSR toolset comprises of five python scripts that are run sequentially. A high l
 
 <img src="https://user-images.githubusercontent.com/77098670/158806616-53ffbad7-beac-4263-8cb2-0f92a8e0aa46.gif" width="650" height="900">
 
-Each script is enclosed in a separate folder along with its respective control file.xlsx. Profile\_Generator.py requires reanalysis data which can be downloaded using ERA5 API script available in respective folder.
+Each script is enclosed in a separate folder along with its respective control file.xlsx. Profile\_Generator.py requires ERA5 reanalysis data as input, which can be downloaded from the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/#!/home) (CDS, after having created an account and followed the instructions on [installing the CDS API](https://cds.climate.copernicus.eu/api-how-to)) using the ERA5 API script available in the respective folder as a starting point.
 
 Folders are numbered as per order of running scheme. All scripts use a list of input regions (countrynames.csv) available in the repository. Users can edit this list to run the toolset on desired number of input regions. For a single country run, just add single region name only. Take care that the input region names align with the input shapefile on region boundaries and relevant control files.
 
