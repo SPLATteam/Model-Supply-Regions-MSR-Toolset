@@ -212,9 +212,9 @@ def CreateLocalTimeProfile(pd_UTC, pd_CountryUTC_offsets, country_withspaces):
 #Start of the main program
 
 #Read control input file
-ControlPathsAndNames=pd.read_excel('Control Inputs Profile Generator.xlsx', sheet_name="PathsAndNames", index_col=0)
-ControlConfigurations=pd.read_excel('Control Inputs Profile Generator.xlsx', sheet_name="Configurations", index_col=0)
-pd_CountryUTC_offsets=pd.read_excel('Control Inputs Profile Generator.xlsx', sheet_name="CountryUTC_Offset_InUse")
+ControlPathsAndNames=pd.read_excel('ControlFile_ProfileGenerator.xlsx', sheet_name="PathsAndNames", index_col=0)
+ControlConfigurations=pd.read_excel('ControlFile_ProfileGenerator.xlsx', sheet_name="Configurations", index_col=0)
+pd_CountryUTC_offsets=pd.read_excel('ControlFile_ProfileGenerator.xlsx', sheet_name="CountryUTC_Offset_InUse")
 
 #load paths
 np_ERA5Data=Dataset(ControlPathsAndNames.loc["ERA5DataFilePath"][0])

@@ -16,7 +16,7 @@ def extract_excel(OutputFileName, SourceFolder_Profiles, gdf_destination, REtech
                 pd_Profiles_SingleCountry = pd.read_csv("%s\\%s\\%s %s" % (SourceFolder_Profiles, ctry, ctry, ProfilesFileName))
                 LongitudeColumn=pd_Profiles_SingleCountry['Longitude']
                 LatitudeColumn=pd_Profiles_SingleCountry['Latitude']
-                pd_Profiles_SingleCountry=pd_Profiles_SingleCountry.drop(pd_Profiles_SingleCountry.iloc[:,1:21].columns,axis=1)
+                pd_Profiles_SingleCountry=pd_Profiles_SingleCountry.drop(pd_Profiles_SingleCountry.iloc[:,1:20].columns,axis=1)
                 pd_Profiles_SingleCountry['Longitude']=LongitudeColumn
                 pd_Profiles_SingleCountry['Latitude']=LatitudeColumn
                 pd_SplatReady_SingleCountry = pd.merge(gdf_destination[gdf_destination.CtryName==ctry], pd_Profiles_SingleCountry, on="MSR_ID")
@@ -26,7 +26,7 @@ def extract_excel(OutputFileName, SourceFolder_Profiles, gdf_destination, REtech
                 print("Appending csv rows for: %s"%ctry)
 
             cols = pd_SplatReady.columns.tolist()
-            cols=cols[:1] + cols[-2:] + cols[1:]
+            cols=cols[:1] + cols[-2:] + cols[1:-2]
             pd_SplatReady=pd_SplatReady[cols]
 
             pd_SplatReady.to_csv(OutputFileName)
@@ -37,7 +37,7 @@ def extract_excel(OutputFileName, SourceFolder_Profiles, gdf_destination, REtech
                 pd_Profiles_SingleCountry = pd.read_csv("%s\\%s\\%s %s" % (SourceFolder_Profiles, ctry, ctry, ProfilesFileName))
                 LongitudeColumn=pd_Profiles_SingleCountry['Longitude']
                 LatitudeColumn=pd_Profiles_SingleCountry['Latitude']
-                pd_Profiles_SingleCountry=pd_Profiles_SingleCountry.drop(pd_Profiles_SingleCountry.iloc[:,1:20].columns,axis=1)
+                pd_Profiles_SingleCountry=pd_Profiles_SingleCountry.drop(pd_Profiles_SingleCountry.iloc[:,1:19].columns,axis=1)
                 pd_Profiles_SingleCountry['Longitude']=LongitudeColumn
                 pd_Profiles_SingleCountry['Latitude']=LatitudeColumn
 
@@ -48,13 +48,13 @@ def extract_excel(OutputFileName, SourceFolder_Profiles, gdf_destination, REtech
                 print("Appending csv rows for: %s"%ctry)
 
             cols = pd_SplatReady.columns.tolist()
-            cols=cols[:1] + cols[-2:] + cols[1:]
+            cols=cols[:1] + cols[-2:] + cols[1:-2]
             pd_SplatReady=pd_SplatReady[cols]
 
             pd_SplatReady.to_csv(OutputFileName)
 
 
-ControlPathsAndConfigurations=pd.read_excel('Control Inputs Screener.xlsx', sheet_name="PathsAndConfig", index_col=0)
+ControlPathsAndConfigurations=pd.read_excel('ControlFile_Screener.xlsx', sheet_name="PathsAndConfig", index_col=0)
 
 OutputFolder=ControlPathsAndConfigurations.loc["OutputFolder"][0]
 if not os.path.isdir(OutputFolder):
@@ -82,9 +82,9 @@ WindPreScreenFile=ControlPathsAndConfigurations.loc["WindPreScreenFile"][0]
 # 1 Country specific covered area cutoff (Select best MSRs that cover x % of country area)
 
 #read screening options and criteria to apply
-ScreeningOptions=pd.read_excel('Control Inputs Screener.xlsx', sheet_name="Select screening option", index_col=0)
-CountrySpecificCriteriaSolarPV=pd.read_excel('Control Inputs Screener.xlsx', sheet_name="SolarPV country specific", index_col=0)
-CountrySpecificCriteriaWind=pd.read_excel('Control Inputs Screener.xlsx', sheet_name="Wind country specific", index_col=0)
+ScreeningOptions=pd.read_excel('ControlFile_Screener.xlsx', sheet_name="Select screening option", index_col=0)
+CountrySpecificCriteriaSolarPV=pd.read_excel('ControlFile_Screener.xlsx', sheet_name="SolarPV country specific", index_col=0)
+CountrySpecificCriteriaWind=pd.read_excel('ControlFile_Screener.xlsx', sheet_name="Wind country specific", index_col=0)
 
 
 
@@ -140,6 +140,7 @@ if Flag_RunSolarPV:
                 gdf_destination=gpd.GeoDataFrame(pd.concat([gdf_destination, gdf_SingleCountry]))
                 print (country, CountryArea_kM2)
 
+            gdf_destination=gdf_destination.drop(['CumAreakM2'], axis=1)
             gdf_destination.to_file(OutputFolder + "\\SolarPV_BestMSRsToCover5%CountryArea.shp")
             extract_excel(OutputFolder + "\\SolarPV_BestMSRsToCover5%CountryArea.csv",
             SolarPVSourceFolderCarryingProfiles, gdf_destination, REtechnology, SolarPV_ProfilesFileName,
@@ -183,6 +184,7 @@ if Flag_RunWind:
                 gdf_destination=gpd.GeoDataFrame(pd.concat([gdf_destination, gdf_SingleCountry]))
                 print (country, CountryArea_kM2)
 
+            gdf_destination=gdf_destination.drop(['CumAreakM2'], axis=1)
             gdf_destination.to_file(OutputFolder + "\\Wind_BestMSRsToCover5%CountryArea.shp")
             extract_excel(OutputFolder + "\\Wind_BestMSRsToCover5%CountryArea.csv",
             WindSourceFolderCarryingProfiles, gdf_destination, REtechnology, WindCF_ProfilesFileName,

@@ -268,11 +268,11 @@ For detail on methodology, please consult the paper: Link soon coming
 
 '''
 #Read control input file
-ControlDataSetNames=pd.read_excel('Control Inputs MSR Creator.xlsx', sheet_name="input dataset names", index_col=0)
-ControlCountryWiseInputs=pd.read_excel('Control Inputs MSR Creator.xlsx', sheet_name="country wise inputs", index_col=0)
-ControlConfigurations=pd.read_excel('Control Inputs MSR Creator.xlsx', sheet_name="Configurations", index_col=0)
-ControlPaths=pd.read_excel('Control Inputs MSR Creator.xlsx', sheet_name="Paths", index_col=0)
-ControlAnalysisInputs=pd.read_excel('Control Inputs MSR Creator.xlsx', sheet_name="AnalysisInputs", index_col=0).transpose().drop(index='Comments')
+ControlDataSetNames=pd.read_excel('ControlFile_MSRCreator.xlsx', sheet_name="input dataset names", index_col=0)
+ControlCountryWiseInputs=pd.read_excel('ControlFile_MSRCreator.xlsx', sheet_name="country wise inputs", index_col=0)
+ControlConfigurations=pd.read_excel('ControlFile_MSRCreator.xlsx', sheet_name="Configurations", index_col=0)
+ControlPaths=pd.read_excel('ControlFile_MSRCreator.xlsx', sheet_name="Paths", index_col=0)
+ControlAnalysisInputs=pd.read_excel('ControlFile_MSRCreator.xlsx', sheet_name="AnalysisInputs", index_col=0).transpose().drop(index='Comments')
 
 HomeDirectory=str(ControlPaths.loc["HomeDirectory"][0])
 InputSpatialDatasetsFolder = HomeDirectory + ControlPaths.loc["FolderAddress_InputSpatialDatasets"][0]
