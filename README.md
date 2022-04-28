@@ -7,6 +7,8 @@
 **Methodology contributions:** Asami Miketa, Daniel Russo, Pablo Carvajal, Mohamed Elabbas\
 **Contact** : [bhussain@irena.org](mailto:bhussain@irena.org), [ssterl@irena.org](mailto:ssterl@irena.org), [y_li@outlook.com](mailto:y_li@outlook.com)
 
+Feel free to drop quick emails of your interest, queries and motivations to extend the tool individually or in collaboration. We would also like to track your feedback for impact reporting purposes particularly on how the tool can/has contributed value to your work. Please also cite the MSR toolset methodology paper (soon coming) in your academic/professional works.     
+
 ## Introduction:
 
 This is the public repository of IRENA&#39;s Model Supply Regions (MSR) tool. The tool produces geo-referenced geometries of potential utility scale power supply regions of weather dependent renewable technologies and develops their cost and performance attributes to serve as inputs for energy/power system planning models including generation expansion models (e.g. IRENA [SPLAT Models for Africa](https://irena.org/energytransition/Energy-System-Models-and-Data/System-Planning-Test-Model)). The current version can model Solar PV &amp; Wind-onshore technologies. This tool has been applied on 50 countries in Africa. Results of Africa analysis along with methodological details of the tool and definitions of computed attributes is under publication process. Final outputs are placed in [zonodo](https://zenodo.org/record/6452117#.YlaEq-jP0dU).
