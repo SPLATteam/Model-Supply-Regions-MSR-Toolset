@@ -1,0 +1,25 @@
+name: irena-msr
+channels:
+- conda-forge
+dependencies:
+- python>=3.8
+
+- cdsapi
+- geopandas
+- geocube
+- matplotlib
+- numpy<=1.21
+- netCDF4
+- pandas
+- pyproj
+- pvlib-python
+- rasterio
+- richdem
+- rioxarray
+- rasterstats
+- scipy
+- openpyxl
+- shapely
+- Tslearn
+- xarray
+- xarray-spatial
