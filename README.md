@@ -23,7 +23,7 @@ Each script is enclosed in a separate folder along with its respective control f
 
 Folders are numbered as per order of running scheme. All scripts use a list of input regions (countrynames.csv) available in the repository. Users can edit this list to run the toolset on desired number of input regions. For a single country run, just add single region name only. Take care that the input region names align with the input shapefile on region boundaries and relevant control files.
 
-Before running any script in the toolset, make sure that the .py file is placed with **ControlFile.xlsx** in same directory. Also make sure that **ControlFile.xlsx** holds correct file/folder addresses and code/analysis configurations as per user requirements. Script inputs other than ControlFile.xlsx will be made available in the shared folder soon to allow easy onboarding of tool users.
+Before running any script in the toolset, make sure that the .py file is placed with **ControlFile.xlsx** in same directory. Also make sure that **ControlFile.xlsx** holds correct file/folder addresses and code/analysis configurations as per user requirements. 
 
 ## Primary Dependencies:
 
