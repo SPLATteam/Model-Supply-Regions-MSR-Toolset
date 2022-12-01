@@ -98,7 +98,8 @@ def PolygonizeResourcePotential(Path_ResourcePotentialRaster,SubFolder_Polygoniz
         InitialPolygons = gpd.GeoDataFrame.from_features(InitialPolygons, crs="ESRI:54009")
 
         if not InitialPolygons.empty:
-            InitialPolygons = InitialPolygons.explode(ignore_index=True).droplevel(1).reset_index(drop=True)
+            if InitialPolygons.explode(ignore_index=True).index.nlevels>1: # explod function allows removal of any invalid polygons. It automatically introduces additional index in pada frame. If no invalid polygons found, we dont need to run this command.
+                InitialPolygons = InitialPolygons.explode(ignore_index=True).droplevel(1).reset_index(drop=True)
             InitialPolygons = InitialPolygons.drop(columns=['raster_val'])
             InitialPolygons.to_file(Path_SingleBand_InitialMSRs)
 
@@ -375,10 +376,10 @@ for CountryCounter in range(0,len(AllCountries)):#country wise loop
     print(Fore.GREEN+"Running MSR script for %s"%RegionName_withoutSpaces)
 
     if Flag_RoadsBufferedSearch:
-        RoadsBufferDistance_meters = int(ControlCountryWiseInputs.loc[RegionName_withoutSpaces][0]) * 1000
+        RoadsBufferDistance_meters = int(ControlCountryWiseInputs.loc[RegionName_withoutSpaces][1]) * 1000
 
     if Flag_GridBufferedSearch:
-        GridBufferDistance_meters = ControlCountryWiseInputs.loc[RegionName_withoutSpaces][1] * 1000
+        GridBufferDistance_meters = ControlCountryWiseInputs.loc[RegionName_withoutSpaces][0] * 1000
 
 
 
