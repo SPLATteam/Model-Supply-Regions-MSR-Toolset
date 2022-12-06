@@ -7,7 +7,7 @@
 **Methodology contributions:** Asami Miketa, Daniel Russo, Pablo Carvajal, Mohamed Elabbas\
 **Contact** : [bhussain@irena.org](mailto:bhussain@irena.org), [ssterl@irena.org](mailto:ssterl@irena.org), [y_li@outlook.com](mailto:y_li@outlook.com)
 
-Feel free to drop quick emails of your interest, queries and motivations to extend the tool individually or in collaboration. We would also like to track your feedback for impact reporting purposes particularly on how the tool can/has contributed value to your work. Please also cite the MSR toolset methodology [paper] (https://doi.org/10.1038/s41597-022-01786-5) in your academic/professional works.     
+Feel free to drop quick emails of your interest, queries and motivations to extend the tool individually or in collaboration. We would also like to track your feedback for impact reporting purposes particularly on how the tool can/has contributed value to your work. Please also cite the MSR toolset methodology [paper](https://doi.org/10.1038/s41597-022-01786-5) in your academic/professional works.     
 
 ## Introduction:
 
