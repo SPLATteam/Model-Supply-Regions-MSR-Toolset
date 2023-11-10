@@ -11,7 +11,7 @@ Feel free to drop quick emails of your interest, queries and motivations to exte
 
 ## Introduction:
 
-This is the public repository of Model Supply Regions (MSR) tool. The tool produces geo-referenced geometries of potential utility scale power supply regions of weather dependent renewable technologies and develops their cost and performance attributes to serve as inputs for energy/power system planning models including generation expansion models (e.g. IRENA [SPLAT Models for Africa](https://irena.org/energytransition/Energy-System-Models-and-Data/System-Planning-Test-Model)). The current version can model Solar PV &amp; Wind-onshore technologies. This tool has been applied on 50 countries in Africa. Results of Africa analysis along with methodological details of the tool and definitions of computed attributes is available in the methodology [paper](https://doi.org/10.1038/s41597-022-01786-5). Final outputs are placed in [Zenodo](https://zenodo.org/record/7014609#.Y0fDXXZBw2w). Inputs for MSR creator are available in this sharepoint [link](https://irena.sharepoint.com/:f:/s/EnergyPlanningCapacityBuilding-ExternalSharing/Em2CRHjokAZImIodaK5JgbIBuhli6wNMomtQ3uCzks-Gxw?e=beuTOo).
+This is the public repository of Model Supply Regions (MSR) tool. The tool produces geo-referenced geometries of potential utility scale power supply regions of weather dependent renewable technologies and develops their cost and performance attributes to serve as inputs for energy/power system planning models including generation expansion models (e.g. IRENA [SPLAT Models for Africa](https://irena.org/energytransition/Energy-System-Models-and-Data/System-Planning-Test-Model)). The current version can model Solar PV &amp; Wind-onshore technologies. This tool has been applied on 50 countries in Africa. Results of Africa analysis along with methodological details of the tool and definitions of computed attributes is available in the methodology [paper](https://doi.org/10.1038/s41597-022-01786-5). Final outputs are placed in [Zenodo](https://zenodo.org/records/7014915). Inputs for MSR creator are available in this sharepoint [link](https://irena.sharepoint.com/:f:/s/EnergyPlanningCapacityBuilding-ExternalSharing/Em2CRHjokAZImIodaK5JgbIBuhli6wNMomtQ3uCzks-Gxw?e=beuTOo).
 
 ## How to use MSR toolset:
 
@@ -27,9 +27,9 @@ Before running any script in the toolset, make sure that the .py file is placed 
 
 ## Primary Dependencies:
 
-Geopandas = 0.9.0 | geocube = 0.1.0 | Matplotlib = 3.4.3 | numpy = 1.20.0 | netCDF4 = 1.5.7 | pandas = 1.3.2 | pyproj = 3.1.0 | pvlib = 0.8.1 | rasterio = 1.2.6 | richdem = 0.3.4 | rioxarray = 0.9.0 | rasterstats = 0.15.0 | scipy = 1.7.1 | Shapely = 1.7.1 | Tslearn = 0.5.2 | xarray = 0.20.2 | xarray-spatial = 0.3.0 |
+Geopandas = 0.9.0 | geocube = 0.1.0 | matplotlib = 3.4.3 | numpy = 1.20.0 | netcdf4 = 1.5.7 | pandas = 1.3.2 | pyproj = 3.1.0 | pvlib = 0.8.1 | rasterio = 1.3.9 | richdem = 0.3.4 | rioxarray = 0.9.0 | rasterstats = 0.15.0 | scipy = 1.7.1 | shapely = 1.7.1 | tslearn = 0.5.2 | xarray = 0.20.2 | xarray-spatial = 0.3.0 | openpyxl = 3.1.2 | rtree = 1.1.0 | datacube = 1.8.5 | gdal = 3.3.2
 
-Library versions mentioned above serve only for guidance. The scripts should be able to run flexibly on any latest library versions with or without minor updates as necessary.
+Library versions mentioned above serve only for guidance. The scripts may run flexibly on other library versions with or without minor updates as necessary. However, we recommend to follow initially the above environment, as unforeseen conflicts may arise between newer versions of packages.
 
 ## Versions:
 
