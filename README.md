@@ -27,9 +27,9 @@ Before running any script in the toolset, make sure that the .py file is placed 
 
 ## Primary Dependencies:
 
-Geopandas = 0.9.0 | geocube = 0.1.0 | matplotlib = 3.4.3 | numpy = 1.20.0 | netcdf4 = 1.5.7 | pandas = 1.3.2 | pyproj = 3.1.0 | pvlib = 0.8.1 | rasterio = 1.3.9 | richdem = 0.3.4 | rioxarray = 0.9.0 | rasterstats = 0.15.0 | scipy = 1.7.1 | shapely = 1.7.1 | tslearn = 0.5.2 | xarray = 0.20.2 | xarray-spatial = 0.3.0 | openpyxl = 3.1.2 | rtree = 1.1.0 | datacube = 1.8.5 | gdal = 3.3.2 | h5py = 3.10.0 | threadpoolctl = 3.1.0
+geopandas = 0.9.0 | geocube = 0.1.0 | matplotlib = 3.4.3 | netcdf4 = 1.5.7 | pandas = 1.3.2 | pyproj = 3.1.0 | pvlib = 0.8.1 | rasterio = 1.3.9 | richdem = 0.3.4 | rioxarray = 0.9.0 | rasterstats = 0.15.0 | scipy = 1.7.1 | shapely = 1.7.1 | tslearn = 0.5.2 | xarray = 0.20.2 | xarray-spatial = 0.3.0 | openpyxl = 3.1.2 | rtree = 1.1.0 | datacube = 1.8.5 | gdal = 3.3.2 | numpy = 1.20.0 | h5py = 3.10.0 | threadpoolctl = 3.1.0
 
-Library versions mentioned above serve only for guidance. The scripts may run flexibly on other library versions with or without minor updates as necessary. However, we recommend to follow initially the above environment, as unforeseen conflicts may arise between newer versions of packages.
+Library versions mentioned above serve only for guidance. The scripts may run flexibly on other library versions with or without minor updates as necessary. However, we recommend to follow initially the above environment, installing packages in the order given, as unforeseen conflicts may arise between newer versions of packages.
 
 ## Versions:
 
